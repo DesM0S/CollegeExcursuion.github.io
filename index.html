@@ -14,8 +14,8 @@
         <div class="header-content">
             <img src="img/logo.svg" alt="logo" width="328" height="48" class="logo-img">
             <div class="nav">
-                <a href="#">История</a>
-                <a href="#">Контакты</a>
+                <a href="#histori">История</a>
+                <a href="#contacts">Контакты</a>
             </div>
             <div class="time">
                 <p id="clock" class="watch">00:00:00</p>
@@ -38,7 +38,7 @@
 
     <div class="centre">
         <div class="story start">
-            <p class="head-txt">Начало</p>
+            <p class="head-txt" id="histori">Начало</p>
             <div class="info first">
                 <img src="img/data1972.svg" alt="1972" width="501" height="218" class="g1972">
                 <p class="story-txt">Колледж имеет богатую историю. В 1972 году создано Профессиональное училище № 30
@@ -125,7 +125,7 @@
     <footer>
         <div class="footer-nav">
             <div class="footer-contacts">
-                <p class="foo-head-txt">Контакты</p>
+                <p class="foo-head-txt" id="contacts">Контакты</p>
                 <p class="foo-txt">Адрес: 160011 г.Вологда, ул.Первомайская, д. 42
                     <br>АПОУ ВО ВКСиИТ
                 </p>
@@ -146,6 +146,22 @@
 
     </footer>
     <script src="scripts/app.js"></script>
+    <script>
+        const anchors = document.querySelectorAll('a[href*="#"]')
+
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+
+                const blockID = anchor.getAttribute('href').substr(1)
+
+                document.getElementById(blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        }
+    </script>
 </body>
 
 </html>
