@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>3d экскурсия</title>
+	<title>экскурсия</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/tour.css">
+	<link rel="stylesheet" href="./css/tour-position.css">
 </head>
 
 <body style="background-color: #444444; ">
@@ -32,12 +33,12 @@
 							<circle cx="14" cy="14" r="9" fill="black" />
 						</svg>
 						<span class="btn-hover">
-							<span>Холл</span>
+							<span>Войти</span>
 						</span>
 					</a>
 
 					<!-- в библиотеку -->
-					<a data-tout-where="2" data-tour-button-next-id="1" class="tour-btn">
+					<a data-tout-where="2" data-tour-button-next-id="2" class="tour-btn">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
 							<circle cx="14" cy="14" r="9" fill="black" />
@@ -65,7 +66,7 @@
 				</a>
 				<!-- modal info -->
 				<div class="tour-info-modal">
-					Вход в Вологодский Колледж Связи и Информационных Технологий. 
+					Вход в Вологодский Колледж Связи и Информационных Технологий.
 				</div>
 			</div>
 
@@ -78,27 +79,36 @@
 			<!-- Контайнер с информацией -->
 			<div data-tour-slide-container>
 				<!-- Картинка -->
-				<div data-tour-img="img" style="background-image: url(./tourImg/1.jpg);"></div>
+				<div data-tour-img="img" style="background-image: url(./tourImg/холл.jpg);"></div>
 
 				<!-- кнопки -->
 				<div data-tour-button-next-count="2">
-					<a data-tout-where="2" data-tour-button-next-id="1" class="tour-btn">
+					<a data-tout-where="1.1" data-tour-button-next-id="1" class="tour-btn">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
 							<circle cx="14" cy="14" r="9" fill="black" />
 						</svg>
 						<span class="btn-hover">
-							<span>В столовую</span>
+							<span>Столовая</span>
+						</span>
+					</a>
+					<a data-tout-where="1.2" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Коридор</span>
 						</span>
 					</a>
 
-					<a data-tout-where="3" data-tour-button-next-id="2" class="tour-btn">
+					<a data-tout-where="1.3" data-tour-button-next-id="3" class="tour-btn">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
 							<circle cx="14" cy="14" r="9" fill="black" />
 						</svg>
 						<span class="btn-hover">
-							<span>На 2 этаж</span>
+							<span>2 этаж</span>
 						</span>
 					</a>
 				</div>
@@ -123,34 +133,293 @@
 			</div>
 		</div>
 
-		<!-- слайд 2 вход в библиотеку -->
-		<div data-tour-slide="2" class="tour-slide">
+		<!-- слад 1.1 столовая-->
+		<div data-tour-slide="1.1" class="tour-slide">
 			<!-- Заголовок -->
-			<h3 data-tour-title>Общажитие Колледжа Связи</h3>
+			<h3 data-tour-title>столовая</h3>
 			<!-- Контайнер с информацией -->
 			<div data-tour-slide-container>
 				<!-- Картинка -->
-				<div data-tour-img="img" style="background-image: url(./tourImg/1.jpg);"></div>
+				<div data-tour-img="img" style="background-image: url(./tourImg/столовая.jpg);"></div>
 
 				<!-- кнопки -->
-				<div data-tour-button-next-count="2">
-					<a data-tout-where="2" data-tour-button-next-id="1" class="tour-btn">
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="1.1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">Столовая Колледжа Связи. В ней кушают студенты и преподаватели.</div>
+			</div>
+		</div>
+
+		<!-- слад 1.2 коридор в спортзал-->
+		<div data-tour-slide="1.2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Коридор</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/холл-вправо.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="1.2-1" data-tour-button-next-id="1" class="tour-btn">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
 							<circle cx="14" cy="14" r="9" fill="black" />
 						</svg>
 						<span class="btn-hover">
-							<span>В столовую</span>
+							<span>Спортзал</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="no" class="tour-btn-info" data-tour-info-slide="1.2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 1.2-1 спортзал-->
+		<div data-tour-slide="1.2-1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Спортзал</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/спортзал.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.2" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="1.2-1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">Спортзал. Здесь студенты занимаются физической активностью, а также проводятся
+					спортивные соревнования.</div>
+			</div>
+		</div>
+
+		<!-- слад 1.3 лестница 2 этаж-->
+		<div data-tour-slide="1.3" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Лестничный пролет</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/лестничный\ пролет.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="3">
+					<a data-tout-where="1.3-1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Третий этаж</span>
+						</span>
+					</a>
+					<a data-tout-where="1.3-2" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Второй этаж</span>
+						</span>
+					</a>
+					<a data-tout-where="1" data-tour-button-next-id="3" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Назад</span>
 						</span>
 					</a>
 
-					<a data-tout-where="3" data-tour-button-next-id="2" class="tour-btn">
+
+
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="no" class="tour-btn-info" data-tour-info-slide="1.3">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 1.3-2.1 2 этаж коридор-->
+		<div data-tour-slide="1.3-2.1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Второй этаж</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/2-этаж-коридор.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="10" data-tour-button-next-id="1" class="tour-btn">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
 							<circle cx="14" cy="14" r="9" fill="black" />
 						</svg>
 						<span class="btn-hover">
-							<span>На 2 этаж</span>
+							<span>Музей</span>
+						</span>
+					</a>
+
+
+
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3-2" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="no" class="tour-btn-info" data-tour-info-slide="1.3-2.1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 1.3-2 2 этаж-->
+		<div data-tour-slide="1.3-2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Второй этаж</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/2\ этаж.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="1.3-2.1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Коридор</span>
+						</span>
+					</a>
+
+
+
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="1.3-2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Второй этаж
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 2 вход в библиотеку -->
+		<div data-tour-slide="2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/вход-в-библиотеку.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="3" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Войти</span>
 						</span>
 					</a>
 				</div>
@@ -160,7 +429,7 @@
 						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
 
 				<!-- информация -->
-				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="1">
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="2">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -177,6 +446,961 @@
 			</div>
 		</div>
 
+		<!-- слайд 3 вход в библиотеку 2-->
+		<div data-tour-slide="3" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/вход-в-библиотеку2.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="4" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>В влево</span>
+						</span>
+					</a>
+
+					<a data-tout-where="7" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>В вправо</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="2" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="3">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Библиотека. Здесь студенты распечатывают свои курсовые и дипломные работы.
+					В библиотеке также большое количество книг, которое можно взять на прочтение
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 4 библиотека влево-->
+		<div data-tour-slide="4" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-экран.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="5" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 1</span>
+						</span>
+					</a>
+
+					<a data-tout-where="6" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 2</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="3" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="no" class="tour-btn-info" data-tour-info-slide="4">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 5 библиотека стенд 1-->
+		<div data-tour-slide="5" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-стенд-петр.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="4" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="5">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">Стенд посвещенный Петру I
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 6 библиотека стенд 2-->
+		<div data-tour-slide="6" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-стенд-пушкин.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="4" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="6">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">Стенд посвещенный Пушкинскому дню Росии
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 7 библиотека вправо 1-->
+		<div data-tour-slide="7" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-право-1.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="8" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Пройти дальше</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="3" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="7">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Стилажи с книгами
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 8 библиотека вправо 2-->
+		<div data-tour-slide="8" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-право-2.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="9" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Пройти дальше</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="7" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="8">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Стилажи с книгами
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 9 библиотека вправо 3-->
+		<div data-tour-slide="9" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Библиотека</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/библиотека-право-3.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="3" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Пройти дальше</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="8" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="9">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Стилажи с книгами
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 10 музей-->
+		<div data-tour-slide="10" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Вход в музей</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="11" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Войти</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3-2.1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="no" class="tour-btn-info" data-tour-info-slide="10">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Стилажи с книгами
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11 музей main-->
+		<div data-tour-slide="11" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Музей</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей-майн.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="11.1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 1</span>
+						</span>
+					</a>
+					<a data-tout-where="11.2" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 2</span>
+						</span>
+					</a>
+					<a data-tout-where="11.3" data-tour-button-next-id="3" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 3</span>
+						</span>
+					</a>
+					<a data-tout-where="11.4" data-tour-button-next-id="4" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Стенд 4</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="10" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Музей Колледжа Связи. В музее представлены экспонаты старинной телефонии и средства связи.
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.1 стенд 1-->
+		<div data-tour-slide="11.1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Cтаринные средства связи</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей-телефон1.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="2">
+					<a data-tout-where="11.1-1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Модели 1</span>
+						</span>
+					</a>
+					<a data-tout-where="11.1-2" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Модели 2</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					На фото представлены старинные средства связи
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.1 стенд 1-->
+		<div data-tour-slide="11.1-1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Cтаринные средства связи</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей-телефон2.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11.1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.1-1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					На фото представлены старинные средства связи
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.2 стенд 2-->
+		<div data-tour-slide="11.2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Сварочный аппарат</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей\ сварочный\ аппарат.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Сварочный аппарат для световолоконного кабеля
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.3 стенд 3-->
+		<div data-tour-slide="11.3" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Телеграфный аппарат</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/телеграф.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.3">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Телеграфный аппарат СТА-35
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.4 стенд 4-->
+		<div data-tour-slide="11.4" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title> Военно – полевые телефоны </h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/военные\ телефоны.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.4">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Стенд с военно – полевыми телефонными аппаратами
+				</div>
+			</div>
+		</div>
+
+		<!-- слайд 11.1 стенд 1-->
+		<div data-tour-slide="11.1-2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Cтаринные средства связи</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/музей-телефон3.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="11.1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="11.1-2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					На фото представлены старинные средства связи
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 1.3-1 3 этаж коридор-->
+		<div data-tour-slide="1.3-1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>Третий этаж</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/3этаж.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="12" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>26 каб</span>
+						</span>
+					</a>
+					<a data-tout-where="13" data-tour-button-next-id="2" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>25 каб</span>
+						</span>
+					</a>
+
+
+
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="1.3-1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Третий этаж
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 12 3 этаж коридор-->
+		<div data-tour-slide="12" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>26 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/25каб.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="12-1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Войти</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3-1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="12">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					26 кабинет. Информационные технологии
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 12-2 3 этаж коридор-->
+		<div data-tour-slide="12-2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>26 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/25каб-2.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="12-1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="12-2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Рабочее место студента.
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 12-1 3 этаж коридор-->
+		<div data-tour-slide="12-1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>26 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/25каб-1.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="12-2" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Подойти</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="12" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="12-1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Кабинет 26, наш любимый кабинет на все времена.
+					Тут проходят пары по разработке кода информационных систем, а также пары по проектированию и дизайну
+					информационных систем. Кабинет оборудован компьютерами и современными стульями.
+				</div>
+			</div>
+		</div>
+
+
+		<!-- слад 13 3 этаж коридор-->
+		<div data-tour-slide="13" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>25 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/26каб.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="13-1" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Войти</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="1.3-1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="13">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					25 кабинет.  Лабаратория информационных технологий
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 12-2 3 этаж коридор-->
+		<div data-tour-slide="13-2" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>25 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/26каб-2.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="0">
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="13-1" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="13-2">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					Рабочее место студента.
+				</div>
+			</div>
+		</div>
+
+		<!-- слад 12-1 3 этаж коридор-->
+		<div data-tour-slide="13-1" class="tour-slide">
+			<!-- Заголовок -->
+			<h3 data-tour-title>25 каб</h3>
+			<!-- Контайнер с информацией -->
+			<div data-tour-slide-container>
+				<!-- Картинка -->
+				<div data-tour-img="img" style="background-image: url(./tourImg/26каб-1.jpg);"></div>
+
+				<!-- кнопки -->
+				<div data-tour-button-next-count="1">
+					<a data-tout-where="13-2" data-tour-button-next-id="1" class="tour-btn">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="14" cy="14" r="13" fill="white" stroke="black" stroke-width="2" />
+							<circle cx="14" cy="14" r="9" fill="black" />
+						</svg>
+						<span class="btn-hover">
+							<span>Подойти</span>
+						</span>
+					</a>
+				</div>
+
+				<!-- кнопка на придыдущий слайд -->
+				<a class="tour-btn--back" data-tout-where="13" data-tour-button-back="yes"> <svg class="liquid-button"
+						data-color1="#ccc" data-color2="#000" data-color3="#232425" data-text="Назад"></svg></a>
+
+				<!-- информация -->
+				<a data-tour-info="yes" class="tour-btn-info" data-tour-info-slide="13-1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+							stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 8V12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M12 16H12.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+
+				<!-- modal info -->
+				<div class="tour-info-modal">
+					25 кабинет. Оборудованный под разработку кода и проектирование дизайна информационных систем
+				</div>
+			</div>
+		</div>
 
 		<a href="./index.html" class="leave">Выйти с экскурсии</a>
 	</div>

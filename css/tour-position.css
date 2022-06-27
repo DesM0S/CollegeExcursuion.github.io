@@ -1,4 +1,170 @@
-[data-tour-slide="0"] [data-tout-where="1"] {
+/* Главная */
+[data-tour-slide="0"] [data-tour-button-next-id="1"] {
 	top: 50%;
 	left: 50%;
+}
+
+[data-tour-slide="0"] [data-tour-button-next-id="2"] {
+	top: 404px;
+	right: 80px;
+}
+
+/* библиотека вход 1*/
+[data-tour-slide="2"] [data-tour-button-next-id="1"] {
+	top: 425px;
+	right: 421px;
+}
+
+/* библиотека вход 2*/
+[data-tour-slide="3"] [data-tour-button-next-id="1"] {
+	top: 425px;
+	left: 182px;
+}
+
+[data-tour-slide="3"] [data-tour-button-next-id="2"] {
+	top: 425px;
+	right: 182px;
+}
+
+/* библиотека экран*/
+[data-tour-slide="4"] [data-tour-button-next-id="1"] {
+	top: 383px;
+	left: 330px;
+}
+
+[data-tour-slide="4"] [data-tour-button-next-id="2"] {
+	top: 368px;
+	right: 182px;
+}
+
+/* библиотека право*/
+[data-tour-slide="7"] [data-tour-button-next-id="1"] {
+	top: 50%;
+}
+
+/* библиотека право2*/
+[data-tour-slide="8"] [data-tour-button-next-id="1"] {
+	top: 50%;
+}
+
+/* библиотека право3*/
+[data-tour-slide="9"] [data-tour-button-next-id="1"] {
+	top: 50%;
+}
+
+/* холл */
+[data-tour-slide="1"] [data-tour-button-next-id="1"] {
+	top: 404px;
+	right: 309px;
+}
+
+[data-tour-slide="1"] [data-tour-button-next-id="2"] {
+	top: 438px;
+	right: 70px;
+}
+
+[data-tour-slide="1"] [data-tour-button-next-id="3"] {
+	top: 438px;
+	left: 220px;
+}
+
+/* коридор в спортзал */
+[data-tour-slide="1.2"] [data-tour-button-next-id="1"] {
+	left: 254px;
+	top: 347px;
+}
+
+
+/* коридор в спортзал */
+[data-tour-slide="1.3"] [data-tour-button-next-id="1"] {
+	left: 156px;
+	top: 141px;
+}
+
+[data-tour-slide="1.3"] [data-tour-button-next-id="2"] {
+	left: 350px;
+	top: 176px;
+}
+
+[data-tour-slide="1.3"] [data-tour-button-next-id="3"] {
+	left: 185px;
+	top: 547px;
+}
+
+/* коридор в спортзал */
+[data-tour-slide="1.3-2"] [data-tour-button-next-id="1"] {
+	left: 95px;
+	top: 335px;
+}
+
+/* коридор в спортзал */
+[data-tour-slide="1.3-2.1"] [data-tour-button-next-id="1"] {
+	right: 95px;
+	top: 335px;
+}
+
+/* коридор в музей */
+[data-tour-slide="10"] [data-tour-button-next-id="1"] {
+
+	top: 335px;
+}
+
+/* музей */
+[data-tour-slide="11"] [data-tour-button-next-id="1"] {
+	top: 393px;
+	left: 187px;
+}
+[data-tour-slide="11"] [data-tour-button-next-id="2"] {
+	top: 479px;
+	left: 50px;
+}
+[data-tour-slide="11"] [data-tour-button-next-id="3"] {
+	top: 380px;
+	left: 290px;
+}
+[data-tour-slide="11"] [data-tour-button-next-id="4"] {
+	top: 469px;
+	right: 50px;
+}
+
+/* музей стенд 1*/
+[data-tour-slide="11.1"] [data-tour-button-next-id="1"] {
+	left: 218px;
+	top: 235px;
+}
+[data-tour-slide="11.1"] [data-tour-button-next-id="2"] {
+	right: 218px;
+	top: 235px;
+}
+
+/* музей стенд 1*/
+[data-tour-slide="1.3-1"] [data-tour-button-next-id="1"] {
+	right: 195px;
+	top: 301px;
+}
+[data-tour-slide="1.3-1"] [data-tour-button-next-id="2"] {
+	right: 293px;
+	top: 361px;
+}
+
+/* музей стенд 1*/
+[data-tour-slide="12"] [data-tour-button-next-id="1"] {
+	top: 400px;
+	left: 300px;
+}
+/* музей стенд 1*/
+[data-tour-slide="12-1"] [data-tour-button-next-id="1"] {
+	top: 376px;
+	left: 171px;
+}
+
+/* музей стенд 1*/
+[data-tour-slide="13"] [data-tour-button-next-id="1"] {
+	top: 400px;
+	left: 391px;;
+}
+/* музей стенд 1*/
+[data-tour-slide="13-1"] [data-tour-button-next-id="1"] {
+	top: 448px;
+	left: 213px;
 }
